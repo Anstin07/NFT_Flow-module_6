@@ -13,11 +13,11 @@ The contract emits events for the initialization of the contract, as well as for
 # Getting Started
 # Executing program
 # Requirements
->Access to a Flow network node.
->Cadence Compiler
->Cadence REPL
->Cadence SDK
->
+> Access to a Flow network node.
+> Cadence Compiler
+> Cadence REPL
+> Cadence SDK
+
 # Deploy the contract
 >Compile the contract using the Cadence Compiler.
 >Deploy the contracts "NFTCore.cdc" and "NonFungibleToken.cdc" to the Flow network node.(NOTE: deploying address should be updated on all required .cdc files)
