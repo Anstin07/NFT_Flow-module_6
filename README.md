@@ -10,9 +10,10 @@ The MyCollectionPublic interface defines the public functions that can be used t
 
 The contract emits events for the initialization of the contract, as well as for the deposit and withdrawal of NFTs. Overall, this contract provides a simple implementation of NFTs and demonstrates the core functionality required for creating and managing them in a blockchain environment.
 
-# Getting Started
-# Executing program
+# Getting Started# Executing program
+
 # Requirements
+
 * Access to a Flow network node.
 * Cadence Compiler
 * Cadence REPL
