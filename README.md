@@ -20,33 +20,34 @@ The contract emits events for the initialization of the contract, as well as for
 * Cadence SDK
 
 # Deploy the contract
->Compile the contract using the Cadence Compiler.
->Deploy the contracts "NFTCore.cdc" and "NonFungibleToken.cdc" to the Flow network node.(NOTE: deploying address should be updated on all required .cdc files)
->Create the collection with "createCollection.cdc"
->Mint a new NFT with "Deposit NFT.cdc"
->Use Scripts to display metadata of the NFT's
+* Compile the contract using the Cadence Compiler.
+* Deploy the contracts "NFTCore.cdc" and "NonFungibleToken.cdc" to the Flow network node.(NOTE: deploying address should be updated on all required .cdc files)
+* Create the collection with "createCollection.cdc"
+* Mint a new NFT with "Deposit NFT.cdc"
+* Use Scripts to display metadata of the NFT's
 
 # Other Usable Functions Inside The Contract
 >
->Withdraw an NFT
+* Withdraw an NFT
 Call the getIDs() function on the Collection instance to get the list of NFT IDs you own. Call the withdraw(withdrawID) function on the Collection instance and pass in the ID of the NFT you want to withdraw. The NFT will be transferred back to the caller.
 
->Transfer an NFT
+* Transfer an NFT
 Call the borrowAuthNFT(id) function on the Collection instance and pass in the ID of the NFT you want to transfer. Create a new instance of the Collection resource using the createEmptyCollection() function. Call the deposit(token) function on the new Collection instance and pass in the borrowed NFT. The NFT ownership will be transferred to the new Collection instance.
 
 # Reading NFT metadata
 The following functions can be used to read NFT metadata:
 
->getIDs(): Returns the list of NFT IDs you own.
->borrowNFT(id): Returns a borrowed reference to an NFT by ID.
->borrowAuthNFT(id): Returns an authenticated borrowed reference to an NFT by ID.
+* getIDs(): Returns the list of NFT IDs you own.
+* borrowNFT(id): Returns a borrowed reference to an NFT by ID.
+* borrowAuthNFT(id): Returns an authenticated borrowed reference to an NFT by ID.
 
 The NFT resource defines the following fields:
 
-id: The unique identifier of the NFT.
-name: The name of the NFT.
-favouriteFood: The favourite food of the NFT.
-luckyNumber: The lucky number of the NFT.
+* id: The unique identifier of the NFT.
+* name: The name of the NFT.
+* favouriteFood: The favourite food of the NFT.
+* luckyNumber: The lucky number of the NFT.
+
 Authors
 Metacrafter Jacob Tucker @metacraftersio
 
