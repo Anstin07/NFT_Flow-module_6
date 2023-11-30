@@ -10,14 +10,14 @@ pub contract CryptoPoops: NonFungibleToken {
     pub let id: UInt64
 
     pub let name: String
-    pub let familyname: String
-    pub let age: Int
+    pub let job: String
+    pub let salary: Int
 
-    init(_name: String, _familyname: String, _age: Int) {
+    init(_name: String, _job: String, _salary: Int) {
       self.id = self.uuid
       self.name = _name
-      self.familyname = _familyname
-      self.age = _age
+      self.job = _job
+      self.salary = _salary
     }
   }
 
@@ -76,8 +76,8 @@ pub contract CryptoPoops: NonFungibleToken {
 
   pub resource Minter {
 
-    pub fun createNFT(name: String, familyname: String, age: Int): @NFT {
-      return <- create NFT(_name: name, _familyname: familyname, _age: age)
+    pub fun createNFT(name: String, job: String, salary: Int): @NFT {
+      return <- create NFT(_name: name, _job: job, _salary: salary)
     }
 
     pub fun createMinter(): @Minter {
