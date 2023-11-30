@@ -10,7 +10,9 @@ The MyCollectionPublic interface defines the public functions that can be used t
 
 The contract emits events for the initialization of the contract, as well as for the deposit and withdrawal of NFTs. Overall, this contract provides a simple implementation of NFTs and demonstrates the core functionality required for creating and managing them in a blockchain environment.
 
-# Getting Started# Executing program
+# Getting Started 
+
+# Executing program
 
 # Requirements
 
@@ -27,7 +29,7 @@ The contract emits events for the initialization of the contract, as well as for
 * Use Scripts to display metadata of the NFT's
 
 # Other Usable Functions Inside The Contract
->
+
 * Withdraw an NFT
 Call the getIDs() function on the Collection instance to get the list of NFT IDs you own. Call the withdraw(withdrawID) function on the Collection instance and pass in the ID of the NFT you want to withdraw. The NFT will be transferred back to the caller.
 
@@ -48,10 +50,10 @@ The NFT resource defines the following fields:
 * favouriteFood: The favourite food of the NFT.
 * luckyNumber: The lucky number of the NFT.
 
-Authors
-Metacrafter Jacob Tucker @metacraftersio
+# Authors
+* Metacrafter Jacob Tucker @metacraftersio
 
-Anstin Baby [Blockchain developer]
+* Anstin Baby [Blockchain developer]
 
 # License
 This NFT program is not licensed.
